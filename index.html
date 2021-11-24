@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel= "stylesheet" href= "styles_homepage.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">Cookbook</a>
+            <!-- button show up when page squeeze as menu button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navmenu"
+                <!-- Go to: geeksforgeeks.org-data-toggle-attributes-in-twitter-bootstrap -->
+            
+            <span class="navbar-toggler-icon"></span>
+            </button>
+  
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <!-- ms-auto = margin start auto  -->
+                <li class="nav-item">
+                    <a href="#country_aus.html" class="nav-link">Australia</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#country_sa.html" class="nav-link">South Africa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#country_turk.html" class="nav-link">Turkey</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="#country_pak.html" class="nav-link">Pakistan</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- header section -->
+    <!-- <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center">
+        <div class="container">
+            <div class="d-lg-flex align-items-center justify-content-between">
+                <div>
+                    <h1>As <span class="text-warning">RECIPE</span> has no soul. You as the cook must bring soul to the <span class="text-warning">RECIPE</span> </h1>        
+                </div>
+                <img class="img-fluid w-100 d-none d-sm-block" src="images/image_header.jfif" alt=""/>
+            </div>
+        </div>
+  </section> -->
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/image1.jfif" class="d-block w-100" alt=" Food pic">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/image2.jfif" class="d-block w-100" alt="Food pic">
+            </div>
+            <div class="carousel-item">
+                <img src="./images/image3.jfif" class="d-block w-100" alt="Food pic">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </section>
+    <section>
+
+        <div class="wrapper">
+            <div class="country">
+                <div class="country-name heading">
+                    <h2 id="heading">Recipes from around the world</h2>
+                </div>
+                <div class="country-name country-name-1">
+                    <a href="#country_aus.html" class="country-link">
+                        <img src="./images/image_aus.jfif" class="country-image" />
+                        <div class="country-name-overlay">
+                            <span>Australian Cuisine</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="country-name country-name-2">
+                    <a href="#country_sa.html" class="country-link">
+                        <img src="./images/image_sa.jfif" class="country-image" />
+                        <div class="country-name-overlay">
+                            <span>South African Cuisine</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="country-name country-name-3">
+                    <a href="#country_turk.html" class="country-link">
+                        <img src="./images/image_turk.jfif" class="country-image" />
+                        <div class="country-name-overlay">
+                            <span>Turkish Cuisine</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="country-name country-name-4">
+                    <a href="#country_pak.html" class="country-link">
+                        <img src="./images/image_pak.jfif" class="country-image" />
+                        <div class="country-name-overlay">
+                            <span>Pakistani Cuisine</span>
+                        </div>
+                    </a>
+                </div>
+                
+                
+            </div> <!--country class ended-->
+        </div> <!--wrapper ended-->
+    </section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
